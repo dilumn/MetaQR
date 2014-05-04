@@ -16,6 +16,7 @@ MetaQR *metaQR = [[MetaQR alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.s
 Please note that this will not work on simulators because this uses the device camera
 </h4>
 
+<h1>
 Credits
 </h1>
 MetaQR was originally created by Dilum Navanjana for iOS.
