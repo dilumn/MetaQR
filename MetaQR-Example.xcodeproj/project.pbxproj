@@ -376,6 +376,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MetaQR-Example/MetaQR-Example-Prefix.pch";
 				INFOPLIST_FILE = "MetaQR-Example/MetaQR-Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -389,6 +390,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MetaQR-Example/MetaQR-Example-Prefix.pch";
 				INFOPLIST_FILE = "MetaQR-Example/MetaQR-Example-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -453,6 +455,7 @@
 				D262492E1915FA3A0005BA08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D262492F1915FA3A0005BA08 /* Build configuration list for PBXNativeTarget "MetaQR-ExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -461,6 +464,7 @@
 				D26249311915FA3A0005BA08 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,6 @@
 //
 
 #import "MainViewController.h"
-#import "MetaQR.h"
 
 @interface MainViewController ()
 
@@ -36,13 +35,24 @@
     // Dispose of any resources that can be recreated.
 }
 
+#pragma mark : MetaQR Delegate
+
+-(void)capturedMetaOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
+{
+    for (AVMetadataObject *metadata in metadataObjects) {
+        if ([metadata.type isEqualToString:AVMetadataObjectTypeQRCode]) {
+            
+            NSString *qrCode = [(AVMetadataMachineReadableCodeObject *)metadata stringValue];
+            NSLog(@"%@",qrCode);
+            break;
+        }
+    }
+}
+
 - (IBAction)scanButton:(id)sender {
     MetaQR *metaQR = [[MetaQR alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-    
+    metaQR.delegate = self;
     [self.view addSubview:metaQR];
-    if(metaQR.QRCode != NULL){
-    NSLog(@"%@",metaQR.QRCode);
-    }
 }
 
 

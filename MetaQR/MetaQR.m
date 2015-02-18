@@ -58,18 +58,9 @@
 didOutputMetadataObjects:(NSArray *)metadataObjects
        fromConnection:(AVCaptureConnection *)connection
 {
-    _QRCode = nil;
-    for (AVMetadataObject *metadata in metadataObjects) {
-        if ([metadata.type isEqualToString:AVMetadataObjectTypeQRCode]) {
-            
-            _QRCode = [(AVMetadataMachineReadableCodeObject *)metadata stringValue];
-            break;
-        }
-    }
+    [self.delegate capturedMetaOutput:captureOutput didOutputMetadataObjects:metadataObjects fromConnection:connection];
     [_session stopRunning];
     [self removeFromSuperview];
-    
-    NSLog(@"QR Code: %@", _QRCode);
 }
 
 @end

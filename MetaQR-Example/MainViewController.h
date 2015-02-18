@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "MetaQR.h"
 
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <MetaQRDelegate>
 
 @end

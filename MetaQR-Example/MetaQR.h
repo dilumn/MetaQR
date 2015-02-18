@@ -9,8 +9,15 @@
 #import <UIKit/UIKit.h>
 @import AVFoundation;
 
+@protocol MetaQRDelegate <NSObject>
+- (void)capturedMetaOutput:(AVCaptureOutput *)captureOutput
+didOutputMetadataObjects:(NSArray *)metadataObjects
+       fromConnection:(AVCaptureConnection *)connection;
+@end
+
 @interface MetaQR : UIView <AVCaptureMetadataOutputObjectsDelegate>
 
-@property (strong,nonatomic) NSString *QRCode;
+//Delegate
+@property (nonatomic, weak) id <MetaQRDelegate> delegate;
 
 @end
