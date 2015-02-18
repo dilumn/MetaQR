@@ -8,8 +8,16 @@ Then the camera will appear & scan the QR Code. You can use the output from @pro
 
 ```html
 MetaQR *metaQR = [[MetaQR alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
+metaQR.delegate = self;
 [self.view addSubview:metaQR];
 ```
+
+Add this delegate method and this delegate method will fire when the QRCode is detected
+
+```html
+-(void)capturedMetaOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
+```
+
 <h1>
 
 <h4>
