@@ -18,6 +18,6 @@ didOutputMetadataObjects:(NSArray *)metadataObjects
 @interface MetaQR : UIView <AVCaptureMetadataOutputObjectsDelegate>
 
 //Delegate
-@property (nonatomic, weak) id <MetaQRDelegate> delegate;
+@property (nonatomic, weak) id <MetaQRDelegate> delegate; //Add this delegate to your Project
 
 @end
