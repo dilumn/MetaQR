@@ -1,41 +1,28 @@
-MetaQR
-======
+# PodSample
 
-MetaQR is for AVCaptureMetadataOutputObjectsDelegate new feature with iOS 7+ for scan QR Codes. From this MetaQR you can just drag &amp; drop MetaQR files to your project &amp; configure your project accordingly.
+[![CI Status](http://img.shields.io/travis/dilum navanjana/PodSample.svg?style=flat)](https://travis-ci.org/dilum navanjana/PodSample)
+[![Version](https://img.shields.io/cocoapods/v/PodSample.svg?style=flat)](http://cocoadocs.org/docsets/PodSample)
+[![License](https://img.shields.io/cocoapods/l/PodSample.svg?style=flat)](http://cocoadocs.org/docsets/PodSample)
+[![Platform](https://img.shields.io/cocoapods/p/PodSample.svg?style=flat)](http://cocoadocs.org/docsets/PodSample)
 
-Add your MetaQR Frame size as you want & add it as a SubView.
-Then the camera will appear & scan the QR Code. You can use the output from @property  *QRCode or use it as you want.
+## Usage
 
-```html
-MetaQR *metaQR = [[MetaQR alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
-metaQR.delegate = self;
-[self.view addSubview:metaQR];
-```
+To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
-Add this delegate method and this delegate method will fire when the QRCode is detected
+## Requirements
 
-```html
--(void)capturedMetaOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection
-```
+## Installation
 
-<h1>
+PodSample is available through [CocoaPods](http://cocoapods.org). To install
+it, simply add the following line to your Podfile:
 
-<h4>
-Please note that this will not work on simulators because this uses the device camera
-</h4>
+    pod "PodSample"
 
-<h1>
-Credits
-</h1>
-MetaQR was originally created by Dilum Navanjana for iOS.
+## Author
 
-<h1>
-Contact
-</h1>
+dilum navanjana, dilumnavanjana@gmail.com
 
-Follow MetaQR on Blog (http://bcdilumonline.blogspot.com)
+## License
 
-<h1>
-License
-</h1>
-MetaQR is available under the MIT license. See the LICENSE file for more info.
+PodSample is available under the MIT license. See the LICENSE file for more info.
+
