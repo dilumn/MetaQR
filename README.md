@@ -16,7 +16,7 @@ Then the camera will appear & scan the QR Code. You can use the output from @pro
 platform :ios, '7.0'
 pod "MetaQR"
 ```
-
+### Usage
 
 ```html
 MetaQR *metaQR = [[MetaQR alloc]initWithFrame:CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height)];
