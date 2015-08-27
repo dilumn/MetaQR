@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "MetaQR"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "MetaQR is for AVCaptureMetadataOutputObjectsDelegate new feature with iOS 7+ for scan QR Codes"
 
   s.description  = <<-DESC
@@ -73,7 +73,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/dilumna/MetaQR.git", :tag => "1.0.1" }
+  s.source       = { :git => "https://github.com/dilumn/MetaQR.git", :tag => "1.0.2" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
