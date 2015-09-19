@@ -27,7 +27,8 @@
         AVCaptureVideoPreviewLayer *previewLayer = [AVCaptureVideoPreviewLayer layerWithSession:_session];
         
         // Display full screen
-        previewLayer.frame = CGRectMake(0,0,320,480);
+        CGSize size=[[UIScreen mainScreen]bounds].size;
+        previewLayer.frame = CGRectMake(0,0,size.width,size.height);
         
         // Add the video preview layer to the view
         [self.layer addSublayer:previewLayer];
